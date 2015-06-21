@@ -7,12 +7,7 @@ class HomeController < ApplicationController
   end
 
   def test
-  	@title = "Test Paperes"
-  	def create
-  		@form = Form.create( form_params )
+  	@title = "Test Paperes"  	
 	end
-
-		
-  end
   
 end
