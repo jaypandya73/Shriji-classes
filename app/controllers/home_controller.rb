@@ -7,6 +7,7 @@ class HomeController < ApplicationController
   end
 
   def test
+<<<<<<< HEAD
   	@title = "Test Papers"
   	
   end
@@ -14,4 +15,9 @@ class HomeController < ApplicationController
   def facilities
     
   end  
+=======
+  	@title = "Test Paperes"  	
+	end
+  
+>>>>>>> 6982ed4528332d22328b55d2cd7bebfc450b8488
 end

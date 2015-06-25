@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registration date</th>
+      <th>Students full name</th>
+      <th>Standard</th>
+      <th>School name</th>
+      <th>Residential address</th>
+      <th>Fathers mobile number</th>
+      <th>Other contact number</th>
+      <th>Maths</th>
+      <th>Science and technology</th>
+      <th>Previous standard result</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%= form.Registration_Date %></td>
+        <td><%= form.Students_Full_Name %></td>
+        <td><%= form.Standard %></td>
+        <td><%= form.School_name %></td>
+        <td><%= form.Residential_Address %></td>
+        <td><%= form.Fathers_mobile_number %></td>
+        <td><%= form.Other_contact_number %></td>
+        <td><%= form.Maths %></td>
+        <td><%= form.Science_and_Technology %></td>
+        <td><%= form.Previous_standard_result %></td>
+        <td><%= link_to 'Show', form %></td>
+        <td><%= link_to 'Edit', edit_form_path(form) %></td>
+        <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Form For Enrollment', new_form_path %>
