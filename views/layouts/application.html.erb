@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shriji</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<%= render 'shared/header' %>
+
+<%= yield %>
+
+<footer class="text-center text-muted" style="margin-top: 30px;">
+    <ul class="list-inline">
+      <li>
+        &copy; SHREEJI CLASSES.
+      </li>
+    </ul>
+  </footer>
+
+<!--<footer class"footer">
+
+  <div id="footer" class="clear">
+    <div class="fl_left">
+      <div class="about_us border">
+        <h2>About Us</h2>
+        <p>Here is the Thung That You Want to Know about us.</p>
+      </div>
+      <div id="contact" class="clear">
+        <h2>Contact Us</h2>
+        <div class="fl_left">
+          <form method="post" action="#">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullname" value="" />
+            <label for="validemail">Email:</label>
+            <input type="text" name="validemail" id="validemail" value="" />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="45" rows="10"></textarea>
+            <button type="submit" value="submit"><span>Submit</span></button>
+          </form>
+        </div>
+        <div class="fl_right">
+          <address>
+          <strong class="title">Company Name</strong><br />
+          Street Name &amp; Number<br />
+          Town<br />
+          Postcode/Zip
+          </address>
+          <ul>
+            <li><strong class="title">Tel:</strong><br />
+              xxxxx xxxxxxxxxx</li>
+            <li><strong class="title">Fax:</strong><br />
+              xxxxx xxxxxxxxxx</li>
+            <li><strong class="title">Email:</strong><br />
+              <a href="#">contact@mydomain.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fl_right">
+      <div id="tabcontainer" class="border">
+        <ul id="tabnav">
+          <li><a href="#tabs-1">From The Blog</a></li>
+          <li><a href="#tabs-2">Latest Tweets</a></li>
+          <li class="last"><a href="#tabs-3">Interesting Links</a></li>
+        </ul>
+       
+        </div>
+       
+
+      </div>
+      <h2>Keep Up To Date</h2>
+      <ul class="socialize">
+        <li><span>Facebook:</span> <a href="#">www.facebook.com/myhandel</a></li>
+        <li><span>Twitter:</span> <a href="#">www.twitter.com/myhandel</a></li>
+        <li class="last"><span>LinkedIn:</span> <a href="#">www.linkedin.com/myhandel</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+</div>
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="center">Copyright &copy; 2015 Shriji Classes - All Rights Reserved - <a href="#">www .shrijiclasees.com</a></p>
+   
+  </div>
+</div>
+
+</footer>-->
+
+</body>
+</html>
