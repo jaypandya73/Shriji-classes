@@ -29,7 +29,7 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+ <!-- <body>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -48,7 +48,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                <li><a href="<%= new_form_path %>">Registration</a></li>
-               <li class="presentation"><a href="<%= test_path %>">Test Papers</a></li>
+               <li class="presentation"><a href="<%= new_test_path %>">Test Papers</a></li>
                 <li class="presentation"><a href="#">Facilities</a></li>
                 <li><a href="<%= about_path %>">About</a></li>
                 <li class="dropdown">
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-
+-->
     <!-- Carousel
     ================================================== -->
 
@@ -88,7 +88,7 @@
 
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-           <%= link_to image_tag("second.jpg", alt: "",size:"100X100") %>
+           <%= link_to image_tag("first.jpg", alt: "",class:"img-responsive center-block",width:"100%") %>
           <div class="container">
             <div class="carousel-caption">
               <h1>Get Ready For Enrollment...</h1>
@@ -96,8 +96,11 @@
             </div>
           </div>
         </div>
+        <style type="text/css">
+        .my{height: 50px;}
+        </style>
         <div class="item">
-          <%= link_to image_tag("four.jpg", alt: "") %>
+          <%= link_to image_tag("first.jpg", alt: "",class:"img-responsive center-block",width:"100%",height:"50%") %>
           <div class="container">
             <div class="carousel-caption">
               <h1>Here You can see the world in different way....</h1>
@@ -107,7 +110,7 @@
           </div>
         </div>
         <div class="item">
-          <%= link_to image_tag("second.jpg", alt: "") %>
+          <%= link_to image_tag("first.jpg", alt: "",class:"img-responsive center-block",width:"100%") %>
           <div class="container">
             <div class="carousel-caption">
               <h1>Practise makes Maths Perfect....</h1>
@@ -117,7 +120,7 @@
           </div>
         </div>
         <div class="item">
-           <%= link_to image_tag("first.jpg", alt: "") %>
+           <%= link_to image_tag("first.jpg", alt: "", class:"img-responsive center-block",width:"100%") %>
           <div class="container">
             <div class="carousel-caption">
               <h1>See Facilities here that we are willing to provide for you........</h1>
@@ -149,21 +152,21 @@
       <div class="row">
         <div class="col-lg-4">
          <%= link_to image_tag("second.jpg", alt:"",class:"img-circle",width:"140",height:"140") %> 
-          <h2>Heading</h2>
-          <p>Remaining........</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Get Enroll Now</h2>
+          <p>Fill Up Enrollment Form and See Your Self at Par as You Want.Click here for Enrollment... </p>
+          <p><a class="btn btn-default" href="#" role="button">Enroll Now &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <%= link_to image_tag("four.jpg", alt:"",class:"img-circle",width:"140",height:"140") %>
-          <h2>Heading</h2>
-          <p>Remaining.........</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>See Achivements Here</h2>
+          <p>Take a look at achivements that we have got since 2009.Click here to get all Previous Results that makes you better....</p>
+          <p><a class="btn btn-default" href="#" role="button">Achivements&raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <%= link_to image_tag("third.jpg", alt:"",class:"img-circle",width:"140",height:"140") %>
-          <h2>Heading</h2>
-          <p>Remaining.........</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Know More</h2>
+          <p>Know more about classes and you can see that you will get everything that you need...</p>
+          <p><a class="btn btn-default" href="#" role="button">About us &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -174,8 +177,8 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Remaining......</p>
+          <h2 class="featurette-heading">New Feature. <span class="text-muted"> It'll blow your mind.</span></h2>
+          <p class="lead">Here We are introducing some interesting feature that will provide help for parents to track their child's progress plan. You can check latest results which shows your child's marks that he/she obained in latest test.</p>
         </div>
         <div class="col-md-5">
            <%= link_to image_tag("second.jpg", alt:"",class:"img-circle",width:"140",height:"140") %>
@@ -186,8 +189,8 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Remaining......</p>
+          <h2 class="featurette-heading">Do your Practise. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Our method for teaching will help you to enhance your level by taking test which is available to this site. Find Test section and take test even from home for more practise.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
            <%= link_to image_tag("second.jpg", alt:"",class:"img-circle",width:"140",height:"140") %>
@@ -198,8 +201,8 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Remaining......</p>
+          <h2 class="featurette-heading">And lastly, Take a look at Facilities. <span class="text-muted">You'll see it.</span></h2>
+          <p class="lead">Here we provide some good facilities that student need to study.Studdent can get atmosphere that will help to concentrate for study in class.</p>
         </div>
         <div class="col-md-5">
            <%= link_to image_tag("second.jpg", alt:"",class:"img-circle",width:"140",height:"140") %>
@@ -213,6 +216,7 @@
 
       <!-- FOOTER 
       <footer>
+
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; SHRIJI CLASSES. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>

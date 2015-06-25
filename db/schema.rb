@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617114248) do
+ActiveRecord::Schema.define(version: 20150625101643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "test_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "forms", force: :cascade do |t|
     t.date     "Registration_Date"
@@ -42,6 +50,17 @@ ActiveRecord::Schema.define(version: 20150617114248) do
     t.string   "file_content_type"
     t.integer  "file_file_size"
     t.datetime "file_updated_at"
+  end
+
+  create_table "tests", force: :cascade do |t|
+    t.string   "subject"
+    t.string   "uploaded_by"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "scanned_paper_file_name"
+    t.string   "scanned_paper_content_type"
+    t.integer  "scanned_paper_file_size"
+    t.datetime "scanned_paper_updated_at"
   end
 
 end

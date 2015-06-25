@@ -47,5 +47,6 @@ group :development, :test do
   gem 'bootstrap-sass'
   gem 'bootstrap_form'
   gem "paperclip"
+  gem 'owlcarousel-rails'
 end
 

@@ -37,16 +37,18 @@
     
     <%= f.select :Standard, options_for_select([['8','8'],['9','9'],['10','10']]) ,prompt: "Select Your Standard..." %>
   </div>
+ <br>
  
- <h4>Details:</h4>
+<h4><b> Personal Details: </b></h4>
+<br>
 
 
-  <div class="row"> 
-  <div class="col-xs-8">
+  <div class="field"> 
+  
     
-    <%= f.text_field :School_name%>
+    <%= f.select :School_name ,options_for_select([["Jainacharya Anand Ghansuri Vidhyalaya,Jainacharya Anand Ghansuri Vidhyalaya"],["Himat High School","Himat High School"],["Myown High School","Myown High School"]]), prompt:"Select Your School Here....."%>
   </div>
-</div>
+
  
 
   <div class="field">
@@ -63,7 +65,7 @@
   </div>
   <div class="field">
 
-    <h5>Educational Data:</h5>
+ 
     
     <%= f.text_field :Maths %>
   </div>
@@ -73,10 +75,10 @@
   </div>
   <div class="field">
     
-    <%= f.text_field :Previous_standard_result %>
+    <%= f.text_field :Previous_standard_result,label:"Last Result",placeholder:"Result in %" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.button:submit,  class: "btn btn-info pull-center" %>
   </div>
 <% end %>
 </div>

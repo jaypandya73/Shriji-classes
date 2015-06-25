@@ -10,10 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.cycle.min
+//= require jquery.defaultvalue
+//= require jquery.min
+//= require jquery.scrollTo-min
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require home
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require owl.carousel
 //= require_tree .
-$('.carousel').carousel()

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :tests do
+    resources :comments
+  end
+  
   get 'home/index'
 
   resources :forms
@@ -9,7 +13,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/about', to: 'home#about'
-  get '/test' , to: 'home#test'
+  # get '/test' , to: 'home#test'
+  get '/facilities', to: 'home#facilities'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

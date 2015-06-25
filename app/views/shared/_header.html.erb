@@ -1,35 +1,48 @@
+<html>
+<body>
+ <div class="container">
 
-
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">SHRIJI CLASSES</a>
-    </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#"><span class="glyphicon glyphicon-list"></span> some..</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-list"></span> some</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-plus"></span> some</a></li>
-        <li><a href="">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
       
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<%=root_path%>"><b>Logo Here</b></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="<%=root_path%>"><b>Home</b></a></li>
+              <li><a href="<%= new_form_path %>"><b>Enrollment</a></li></b>
+              <li><a href="<%= new_test_path %>"><b>Take Test</b></a></li>
+              <li><a href="<%= facilities_path %>"><b>Facilities</b></a></li>
+              <li><a href="<%= about_path %>"><b>About</b></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>More</b> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Results</a></li>
+                  <li><a href="#">Take a hint</a></li>
+                  <li><a href="#">Write review</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./"><b>Sign in</b><span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/"><b>Sign Up</b></a></li>
+              <li><a href="../navbar-fixed-top/"></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+</body>
+</html>
 
-       
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav> -->
 <!--<ul class="nav nav-pills">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation" class="active"><a href="<%=new_form_path%>">New Admission</a></li>
