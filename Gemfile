@@ -45,15 +45,10 @@ end
 
 gem 'simple_form'
 
-<<<<<<< HEAD
   gem 'bootstrap-sass'
   gem 'bootstrap_form'
   gem "paperclip"
   gem 'owlcarousel-rails'
-end
-=======
-gem 'bootstrap-sass'
-gem 'bootstrap_form'
-gem "paperclip"
->>>>>>> 6982ed4528332d22328b55d2cd7bebfc450b8488
+
+
 

@@ -13,6 +13,10 @@
 	<%= image_tag @test.scanned_paper.url %>
 </p>
 
+<h2>Written Suggestion:</h2>
+<%= render @test.comments %>
+
+
 <h4><b>Put Your Suggestions:</b></h4>
 <%= bootstrap_form_for([@test, @test.comments.build]) do |f| %>
   <p>
@@ -20,7 +24,7 @@
 	<div class="col-md-4">
 
    <br>
-    <%= f.text_area :content , label: "Suggestion" %>
+    <%= f.text_area :content , label: "Suggestion:" %>
 </div>
 </div>
   </p>
