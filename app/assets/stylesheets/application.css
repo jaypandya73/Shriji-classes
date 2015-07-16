@@ -12,16 +12,12 @@
  *
  *= require_tree .
  *= require all
- *= require gallery
- *= require homepage
  *= require navi
- *= require portfolio
- *= require tables
- *= require forms
  *= require_self
  *= require owl.carousel
  *= require owl.theme
  *= require owl.transitions
+ *= require carousel
  *= require rails_bootstrap_forms
  */
 

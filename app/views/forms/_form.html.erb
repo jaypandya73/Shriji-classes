@@ -29,57 +29,100 @@
 
 </div>
   <div class="field">
-    
+    <div class="row">
+    <div class="col-md-6">
     <%= f.text_field :Students_Full_Name %>
   </div>
+</div>
+</div>
 
   <div class="field">
-    
+    <div class="row">
+      <div class="col-md-4">
     <%= f.select :Standard, options_for_select([['8','8'],['9','9'],['10','10']]) ,prompt: "Select Your Standard..." %>
+  </div>
+</div>
   </div>
  <br>
  
-<h4><b> Personal Details: </b></h4>
+<h4><b> <u>Personal Details: </u></b></h4>
 <br>
 
 
   <div class="field"> 
-  
-    
-    <%= f.select :School_name ,options_for_select([["Jainacharya Anand Ghansuri Vidhyalaya,Jainacharya Anand Ghansuri Vidhyalaya"],["Himat High School","Himat High School"],["Myown High School","Myown High School"]]), prompt:"Select Your School Here....."%>
+  <div class="row">
+    <div class="col-md-8">
+    <%= f.select :School_name ,options_for_select([["Jainacharya Anand Ghansuri Vidhyalaya","Jainacharya Anand Ghansuri Vidhyalaya"],["Himat High School","Himat High School"],["Myown High School","Myown High School"]]), prompt:"Select Your School Here....."%>
   </div>
+</div>
+</div>
 
  
 
   <div class="field">
-    
+    <div class="row">
+      <div class="col-md-8">
     <%= f.text_area :Residential_Address %>
   </div>
+</div>
+</div>
   <div class="field">
     <label></label>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
     <%= f.text_field :Fathers_mobile_number, label: "Father's Mobile Number"  %>
   </div>
+</div>
+</div>
   <div class="field">
-   
+   <div class="row">
+    <div class="col-xs-6 col-sm-4">
     <%= f.text_field :Other_contact_number %>
   </div>
+</div>
+</div>
+<style type="text/css">
+  
+  h4 {text-align: center;}
+
+</style>
+
+<h4><b><u>Results</u></b></h4>
+<br>
+<br>
   <div class="field">
 
- 
-    
+ <div class="row">
+    <div class="col-xs-6 col-md-4">
+
     <%= f.text_field :Maths %>
   </div>
-  <div class="field">
-   
+
+   <div class="col-xs-6 col-md-4">
     <%= f.text_field :Science_and_Technology %>
   </div>
+</div>
+</div>
   <div class="field">
-    
+
+    <div class="col-xs-6 col-md-4">
+
+ <div class="row">
     <%= f.text_field :Previous_standard_result,label:"Last Result",placeholder:"Result in %" %>
   </div>
+</div>
+</div><br>
+<br>
+<br>
+<br>
+
+  
   <div class="form-group">
     <%= f.button:submit,  class: "btn btn-info pull-center" %>
   </div>
+</div>
+</div>
+</div>
 <% end %>
 </div>
 </div>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
   resources :tests do
     resources :comments
   end
@@ -13,7 +15,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/about', to: 'home#about'
-  # get '/test' , to: 'home#test'
+  get '/result' , to: 'home#result'
   get '/facilities', to: 'home#facilities'
 
   # Example of regular route:

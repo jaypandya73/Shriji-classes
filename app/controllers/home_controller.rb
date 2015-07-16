@@ -6,17 +6,15 @@ class HomeController < ApplicationController
   	 @title = "About | SHREEJI CLASSES"
   end
 
-  def test
+  def result
 
-  	@title = "Test Papers"
-  	
   end
 
   def facilities
     
   end  
 
-  	@title = "Test Paperes"  	
+  	   	
 	end
   
 

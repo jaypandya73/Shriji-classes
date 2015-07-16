@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shriji</title>
+  <title>SHRIJI</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -10,20 +10,49 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
+
+
+
 <body>
+<%= render 'shared/header' %> 
+
+    
+        
+          <div class="panel panel-warning">
+            <div class="panel-body devise-body" style="padding: 20px 30px;">
+              <% if flash[:notice] %>
+                <div class="alert alert-success">
+                  <%= flash[:notice] %>
+                </div>
+              <% end %>
+              <% if flash[:alert] %>
+                <div class="alert alert-danger">
+                  <%= flash[:alert] %>
+                </div>
+              <% end %>
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-<%= render 'shared/header' %>
 
-<%= yield %>
+
+
 
 <footer class="text-center text-muted" style="margin-top: 30px;">
     <ul class="list-inline">
       <li>
         &copy; SHREEJI CLASSES.
       </li>
+
+      <li>Developed by: Jay Pandya</li>
     </ul>
+ 
   </footer>
 
 <!--<footer class"footer">

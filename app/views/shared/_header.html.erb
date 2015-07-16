@@ -1,6 +1,6 @@
 <html>
 <body>
- <div class="container">
+ 
 
       
       <!-- Static navbar -->
@@ -33,10 +33,19 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./"><b>Sign in</b><span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/"><b>Sign Up</b></a></li>
-              <li><a href="../navbar-fixed-top/"></a></li>
-            </ul>
+        <% if user_signed_in? %>
+        <li><a href="#">Welcome, <%= current_user.email %></a></li>
+        <li><%= link_to 'Edit profile', edit_user_registration_path %></li> 
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        
+        <% else %>
+        <li><a href="<%= new_user_registration_path %>">Sign up</a></li>
+        <li><a href="<%= new_user_session_path %>">Sign in <span class="glyphicon glyphicon-log-in"></span></a></li>
+        <% end %>
+
+        
+        
+      </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>

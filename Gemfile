@@ -49,6 +49,6 @@ gem 'simple_form'
   gem 'bootstrap_form'
   gem "paperclip"
   gem 'owlcarousel-rails'
-
-
+  gem 'devise'
+  gem 'rails_admin'
 
