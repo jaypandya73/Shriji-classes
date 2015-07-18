@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-8 center-block" style="float: none;">
+    <div class="col-md-8 center-block" style="float: right;">
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -35,6 +35,14 @@
   </div>
 </div>
 </div>
+<!-- 
+<div class="field">
+    <div class="row">
+    <div class="col-md-6">
+    <%= f.text_field :last_name %>
+  </div>
+</div>
+</div> -->
 
   <div class="field">
     <div class="row">
@@ -45,14 +53,14 @@
   </div>
  <br>
  
-<h4><b> <u>Personal Details: </u></b></h4>
+<!-- <h4><b> <u>Personal Details: </u></b></h4> -->
 <br>
 
 
   <div class="field"> 
   <div class="row">
     <div class="col-md-8">
-    <%= f.select :School_name ,options_for_select([["Jainacharya Anand Ghansuri Vidhyalaya","Jainacharya Anand Ghansuri Vidhyalaya"],["Himat High School","Himat High School"],["Myown High School","Myown High School"]]), prompt:"Select Your School Here....."%>
+    <%= f.select :School_name ,options_for_select([["Jainacharya Anand Ghansuri Vidhyalaya","Jainacharya Anand Ghansuri Vidhyalaya"],["Himat High School","Himat High School"],["Myown High School","Myown High School"]]), prompt:"Select Your School Name Here....."%>
   </div>
 </div>
 </div>
@@ -87,7 +95,7 @@
 
 </style>
 
-<h4><b><u>Results</u></b></h4>
+<!-- <h4><b><u>Results</u></b></h4> -->
 <br>
 <br>
   <div class="field">
@@ -116,7 +124,6 @@
 <br>
 <br>
 
-  
   <div class="form-group">
     <%= f.button:submit,  class: "btn btn-info pull-center" %>
   </div>

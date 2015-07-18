@@ -72,6 +72,6 @@ class FormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def form_params
-      params.require(:form).permit(:Registration_Date, :Students_Full_Name, :Standard, :School_name, :Residential_Address, :Fathers_mobile_number, :Other_contact_number, :Maths, :Science_and_Technology, :Previous_standard_result)
+      params.require(:form).permit(:Registration_Date, :Students_Full_Name, :Standard, :School_name, :Residential_Address, :Fathers_mobile_number, :Other_contact_number, :Maths, :Science_and_Technology, :Previous_standard_result, :last_name)
     end
 end

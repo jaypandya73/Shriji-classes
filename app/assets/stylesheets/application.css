@@ -17,7 +17,7 @@
  *= require owl.carousel
  *= require owl.theme
  *= require owl.transitions
- *= require carousel
+ *= require homepage
  *= require rails_bootstrap_forms
  */
 

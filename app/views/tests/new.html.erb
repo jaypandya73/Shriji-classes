@@ -1,4 +1,12 @@
-<h2><b>Take Test</b></h2>
+<% provide(:title,"Take Test") %>
+<style type="text/css">
+h2{
+	text-align: center;
+	font-family: Times;
+	
+  }
+</style>
+<h2 style="color:grey"><b>Upload Test</b></h2>
 <%= render 'form' %>
 
 <%= link_to 'Back', tests_path %>
